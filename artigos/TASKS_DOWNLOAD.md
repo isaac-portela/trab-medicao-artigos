@@ -2,31 +2,31 @@
 
 Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de download manual, geralmente por ACM/paywall, link ausente ou página sem PDF direto.
 
-- [ ] On Wasted Contributions: Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023) — Joao Pedro Aguiar do Prado
+- [X ] On Wasted Contributions: Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023) — Joao Pedro Aguiar do Prado
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\01 - On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023`
   - Link: https://doi.org/10.1145/3530785
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (2023) — Vitor Rebula Nogueira
+- [X ] A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (2023) — Vitor Rebula Nogueira
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\02 - A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (20`
   - Link: https://ieeexplore.ieee.org/document/10336287
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experiments (2024) — Joana Iuna de Morais
+- [ X] Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experiments (2024) — Joana Iuna de Morais
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\03 - Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experim`
   - Link: https://dl.acm.org/doi/abs/10.1007/s10664-024-10504-1
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engineering (2014) — Erica Alves dos Santos
+- [X ] A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engineering (2014) — Erica Alves dos Santos
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\04 - A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engin`
   - Link: https://doi.org/10.1002/stvr.1486
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] On the Relationship Between Story Points and Development Effort in Agile Open-Source Software — Joao Antonio Nascimento Pires
+- [X ] On the Relationship Between Story Points and Development Effort in Agile Open-Source Software — Joao Antonio Nascimento Pires
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\05 - On the Relationship Between Story Points and Development Effort in Agile Open-Source Software`
   - Link: https://dl.acm.org/doi/10.1145/3544902.3546238
