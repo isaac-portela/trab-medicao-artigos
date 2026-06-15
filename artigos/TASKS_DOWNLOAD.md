@@ -2,31 +2,31 @@
 
 Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de download manual, geralmente por ACM/paywall, link ausente ou página sem PDF direto.
 
-- [X ] On Wasted Contributions: Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023) — Joao Pedro Aguiar do Prado
+- [ ] On Wasted Contributions: Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023) — Joao Pedro Aguiar do Prado
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\01 - On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023`
   - Link: https://doi.org/10.1145/3530785
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [X ] A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (2023) — Vitor Rebula Nogueira
+- [ ] A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (2023) — Vitor Rebula Nogueira
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\02 - A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (20`
   - Link: https://ieeexplore.ieee.org/document/10336287
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
-- [ X] Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experiments (2024) — Joana Iuna de Morais
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10336287
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/10336287/;jsessionid=7F3BC67EBCBCE11BFD83687D2213CC0F)
+- [ ] Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experiments (2024) — Joana Iuna de Morais
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\03 - Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experim`
   - Link: https://dl.acm.org/doi/abs/10.1007/s10664-024-10504-1
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [X ] A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engineering (2014) — Erica Alves dos Santos
+- [ ] A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engineering (2014) — Erica Alves dos Santos
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\04 - A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engin`
   - Link: https://doi.org/10.1002/stvr.1486
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
-- [X ] On the Relationship Between Story Points and Development Effort in Agile Open-Source Software — Joao Antonio Nascimento Pires
+  - Tentativa: https://doi.org/10.1002/stvr.1486
+  - Status: HTTP 403
+- [ ] On the Relationship Between Story Points and Development Effort in Agile Open-Source Software — Joao Antonio Nascimento Pires
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\05 - On the Relationship Between Story Points and Development Effort in Agile Open-Source Software`
   - Link: https://dl.acm.org/doi/10.1145/3544902.3546238
@@ -49,19 +49,19 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Pasta: `artigos\Lourdes 2026 1\08 - Evaluation Metrics and Statistical Tests for Machine Learning (2024)`
   - Link: https://www.nature.com/articles/s41598-024-56706-x
   - Tentativa: https://www.nature.com/articles/s41598-024-56706-x.pdf
-  - Status: ja existia
+  - Status: baixado de https://www.nature.com/articles/s41598-024-56706-x.pdf?error=cookies_not_supported&code=de91fd54-7a37-441d-83ab-b4dbff2b3302
 - [ ] CI/CD Pipelines Evolution and Restructuring: A Qualitative and Quantitative Study — Ian dos Reis Novais
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\09 - CI CD Pipelines Evolution and Restructuring A Qualitative and Quantitative Study`
   - Link: https://ieeexplore.ieee.org/document/9609201
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9609201
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/9609201/;jsessionid=BAAAB759E44A5D7881257810E42039DA)
 - [ ] An Empirical Investigation of Factors Causing Scope Creep in Agile Global Software Development Context: A Conceptual Model for Project Managers — Gustavo Pimentel Carvalho Costa
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\10 - An Empirical Investigation of Factors Causing Scope Creep in Agile Global Software Development`
   - Link: https://www.researchgate.net/publication/353502652_An_Empirical_Investigation_of_Factors_Causing_Scope_Creep_in_Agile_Global_Software_Development_Context_A_Conceptual_Model_for_Project_Managers
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://www.researchgate.net/publication/353502652_An_Empirical_Investigation_of_Factors_Causing_Scope_Creep_in_Agile_Global_Software_Development_Context_A_Conceptual_Model_for_Project_Managers
+  - Status: HTTP 403
 - [ ] A Quality Model-Based Approach for Measuring User Interface Aesthetics with Grace — Lucas de Carvalho Barbosa
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\11 - A Quality Model-Based Approach for Measuring User Interface Aesthetics with Grace`
@@ -72,8 +72,8 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\12 - Measuring the Impact of Scope Changes on Project Plan Using EVM`
   - Link: https://ieeexplore.ieee.org/abstract/document/9172051
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9172051
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9172051)
 - [ ] Source Code Metrics for Software Defects Prediction — Guilherme Gomes de Brites
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\13 - Source Code Metrics for Software Defects Prediction`
@@ -102,8 +102,8 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\17 - Quality of AI-Generated vs. Human-Generated Code`
   - Link: https://ieeexplore.ieee.org/document/10974782
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10974782
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/10974782/;jsessionid=E60D8232983F5974BB8DA0E84A273F23)
 - [x] Análise da Eficiência do Uso de Recursos de Máquina na Aplicação de Diferentes Práticas de Observabilidade em Ambientes com Hardware Limitado — Gabriel Augusto Souza Borges
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\18 - Análise da Eficiência do Uso de Recursos de Máquina na Aplicação de Diferentes Práticas de Obse`
@@ -120,8 +120,8 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\20 - Do Internal Software Metrics Have Relationship with Fault-Proneness and Change-Proneness (2025)`
   - Link: https://doi.org/10.1134/S0361768824602400
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://doi.org/10.1134/S0361768824602400
+  - Status: resposta nao parece PDF (text/html; charset=utf-8; final=https://link.springer.com/article/10.1134/S0361768824602400?error=cookies_not_supported&code=271896f7-7577-4693-b89b-b055b93dde50)
 - [x] An Empirical Validation of Cognitive Complexity as a Measure of Source Code Understandability (2020) — Luiz Paulo Saud Gonçalves
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\21 - An Empirical Validation of Cognitive Complexity as a Measure of Source Code Understandability (`
@@ -138,14 +138,14 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\23 - Unlocking Inclusive Education A Quality Assessment of Software Design in Applications for Child`
   - Link: https://www.sciencedirect.com/science/article/pii/S0164121224002097
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://www.sciencedirect.com/science/article/pii/S0164121224002097
+  - Status: HTTP 403
 - [ ] Software Cost and Effort Estimation: Current Approaches and Future Trends — Yan Mariz Magalhães Cota
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\24 - Software Cost and Effort Estimation Current Approaches and Future Trends`
   - Link: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10243029
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10243029
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10243029)
 - [x] A Large-Scale Empirical Study of AI-Generated Code in Real-World Repositories (2026) — Augusto Fuscaldi Cerezo
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\25 - A Large-Scale Empirical Study of AI-Generated Code in Real-World Repositories (2026)`
@@ -156,14 +156,14 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\26 - Impact of CMMI Based Software Process Maturity on COCOMO II’s Effort Estimation`
   - Link: https://www.researchgate.net/publication/220413934_Impact_of_CMMI_based_software_process_maturity_on_COCOMO_II’s_effort_estimation
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://www.researchgate.net/publication/220413934_Impact_of_CMMI_based_software_process_maturity_on_COCOMO_II’s_effort_estimation
+  - Status: HTTP 403
 - [ ] In-Process Metrics for Software Testing — Lucas Flor Vilela
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\27 - In-Process Metrics for Software Testing`
   - Link: https://ieeexplore.ieee.org/abstract/document/5386963
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5386963
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/5386963/;jsessionid=1E252AE8D449A192ECD9401925573D0C)
 - [ ] Software Product Metrics (2002) — Lucas Cerqueira Azevedo
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\28 - Software Product Metrics (2002)`
@@ -186,8 +186,8 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\31 - Software Product Quality Metrics A Systematic Mapping Study (2021)`
   - Link: DOI: https://doi.org/10.1109/ACCESS.2021.3054730
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://doi.org/10.1109/ACCESS.2021.3054730
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/9336003/)
 - [x] What’s DAT? Three Case Studies of Measuring Software Development Productivity at Meta With Diff Authoring Time (2025) — Leonardo Vieira Machado
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\32 - What’s DAT Three Case Studies of Measuring Software Development Productivity at Meta With Diff`
@@ -216,14 +216,14 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\36 - Evidence is All We Need Do Self-Admitted Technical Debts Impact Method-Level Maintenance (2025)`
   - Link: DOI: https://doi.org/10.1109/MSR66628.2025.00118
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://doi.org/10.1109/MSR66628.2025.00118
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/11025748/)
 - [ ] Robust Statistical Methods for Empirical Software Engineering (2016) — Matheus Vinicius Mota Rodrigues
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\37 - Robust Statistical Methods for Empirical Software Engineering (2016)`
   - Link: https://www.researchgate.net/publication/303640350_Robust_Statistical_Methods_for_Empirical_Software_Engineering
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://www.researchgate.net/publication/303640350_Robust_Statistical_Methods_for_Empirical_Software_Engineering
+  - Status: HTTP 403
 - [x] The Effects of Change Decomposition on Code Review — Lucca Oliveira Vasconcelos de Faria
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\38 - The Effects of Change Decomposition on Code Review`
@@ -271,7 +271,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Pasta: `artigos\Lourdes 2025 2\45 - Metrics for Evaluating and Improving Transparency in Software Engineering An Empirical Study an`
   - Link: https://link.springer.com/article/10.1007/s42979-024-03471-3
   - Tentativa: https://link.springer.com/content/pdf/10.1007/s42979-024-03471-3.pdf
-  - Status: baixado de https://link.springer.com/content/pdf/10.1007/s42979-024-03471-3.pdf?error=cookies_not_supported&code=6e29829e-c8d0-4b1e-97bb-88519a695c09
+  - Status: ja existia
 - [x] Unveiling Hybrid Cyclomatic Complexity: A Comprehensive Analysis and Evaluation as an Integral Feature in Automatic Defect Prediction Models (2025) — Gabriella Fernanda Silva Pinto
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\46 - Unveiling Hybrid Cyclomatic Complexity A Comprehensive Analysis and Evaluation as an Integral F`
@@ -288,14 +288,14 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\48 - Impact of Evaluating Software Complexity Measures (2025)`
   - Link: https://ieeexplore.ieee.org/document/10854357
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10854357
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10854357)
 - [x] The Role of Measurement Uncertainty in the Validation of a Measurement Procedure (2024) — Pedro Henrique Moreira Caixeta Ferreira
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\49 - The Role of Measurement Uncertainty in the Validation of a Measurement Procedure (2024)`
   - Link: http://link.springer.com/article/10.1007/s00769-024-01593-y
   - Tentativa: https://link.springer.com/content/pdf/10.1007/s00769-024-01593-y.pdf
-  - Status: baixado de https://link.springer.com/content/pdf/10.1007/s00769-024-01593-y.pdf?error=cookies_not_supported&code=cb4a0c52-5356-4b9e-be33-87618037cff2
+  - Status: ja existia
 - [ ] Process Metrics for Software Defect Prediction in Object-Oriented Programs — Gabriel Henrique Silva Pereira
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\50 - Process Metrics for Software Defect Prediction in Object-Oriented Programs`
@@ -307,7 +307,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Pasta: `artigos\Lourdes 2025 2\51 - Metrics in Large-Scale Agile Software Development A Multivocal Literature Review (2024)`
   - Link: https://sol.sbc.org.br/index.php/cibse/article/view/28442
   - Tentativa: https://sol.sbc.org.br/index.php/cibse/article/view/28442
-  - Status: baixado de https://sol.sbc.org.br/index.php/cibse/article/download/28442/28252
+  - Status: ja existia
 - [ ] Measurement and Analysis in CMMI with Six Sigma Methodology and ISO/IEC/IEEE 15939 (2023) — Gabriel Ferreira Amaral
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\52 - Measurement and Analysis in CMMI with Six Sigma Methodology and ISO IEC IEEE 15939 (2023)`
@@ -326,18 +326,18 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Preliminary GQM Model to Evaluate Web API Usability (2024) — Pedro Henrique Braga de Castro
+- [x] A Preliminary GQM Model to Evaluate Web API Usability (2024) — Pedro Henrique Braga de Castro
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\55 - A Preliminary GQM Model to Evaluate Web API Usability (2024)`
   - Link: https://sedici.unlp.edu.ar/handle/10915/178461
   - Tentativa: https://sedici.unlp.edu.ar/handle/10915/178461
-  - Status: TimeoutError: The read operation timed out
+  - Status: baixado de http://sedici.unlp.edu.ar/bitstream/handle/10915/178461/Documento_completo.pdf?sequence=1
 - [ ] Quality Metrics in Agile Software Development — Fernando Antônio Ferreira Ibrahim
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\56 - Quality Metrics in Agile Software Development`
   - Link: https://www.researchgate.net/publication/329657455_Quality_metrics_in_Agile_Software_Development_Projects
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://www.researchgate.net/publication/329657455_Quality_metrics_in_Agile_Software_Development_Projects
+  - Status: HTTP 403
 - [x] LLM4DS: Evaluating Large Language Models for Data Science Code Generation — Emmanuel Viglioni
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\57 - LLM4DS Evaluating Large Language Models for Data Science Code Generation`
@@ -354,8 +354,8 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\59 - Software Metrics Classification for Agile Scrum Process A Literature Review`
   - Link: https://ieeexplore.ieee.org/document/8864244
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8864244
+  - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/8864244/;jsessionid=C606FC5E46255FFBD01567734E4DEC1B)
 - [x] A Taxonomy of Data Quality Challenges in Empirical Software Engineering (2021) — Miguel Vieira de Souza
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\60 - A Taxonomy of Data Quality Challenges in Empirical Software Engineering (2021)`
@@ -408,8 +408,8 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\68 - Top Challenges from the First Practical Online Controlled Experiments Summit (2019)`
   - Link: https://www.researchgate.net/publication/333136404_Top_Challenges_from_the_first_Practical_Online_Controlled_Experiments_Summit
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://www.researchgate.net/publication/333136404_Top_Challenges_from_the_first_Practical_Online_Controlled_Experiments_Summit
+  - Status: HTTP 403
 - [ ] A Review and Analysis of Software Complexity Metrics in Structural Testing (2013) — Gustavo Pereira de Oliveira
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\69 - A Review and Analysis of Software Complexity Metrics in Structural Testing (2013)`
@@ -439,7 +439,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Pasta: `artigos\Coração Eucarístico 2025 2\73 - How to Accelerate R&amp;D and Optimize Experiment Planning with Machine Learning and Data Scien`
   - Link: https://www.chimia.ch/chimia/article/view/2023_7
   - Tentativa: https://www.chimia.ch/chimia/article/view/2023_7
-  - Status: baixado de https://www.chimia.ch/chimia/article/download/2023_7/2023_7
+  - Status: ja existia
 - [ ] Assessment of the Level of Software Development Using CMMI-Dev 1.3 on the Unjani Official Web — Pedro Negri Leão Lambert
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\74 - Assessment of the Level of Software Development Using CMMI-Dev 1.3 on the Unjani Official Web`
@@ -516,8 +516,8 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\86 - Special section Controlled Experiments in Software Engineering`
   - Link: https://www.sciencedirect.com/science/article/abs/pii/S0950584901002002
-  - Tentativa: nao tentado
-  - Status: sem URL direta de PDF ou fonte manual
+  - Tentativa: https://www.sciencedirect.com/science/article/abs/pii/S0950584901002002
+  - Status: HTTP 403
 - [ ] Can Developers Prompt? A Controlled Experiment for Code Documentation Generation — Julia Medeiros Silva
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\87 - Can Developers Prompt A Controlled Experiment for Code Documentation Generation`
