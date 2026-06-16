@@ -63,26 +63,38 @@ class GeminiClassifier:
            - Alinhamento ao Plano de Ensino: Quão bem se conecta com as Unidades 1, 2 e 3 da disciplina.
         """
 
-        try:
-            response = self.client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    response_schema=ArtigoClassificado,
-                    temperature=0.1  # Low temperature for deterministic/objective evaluation
+        import time
+        max_retries = 3
+        retry_delay = 5.0  # Initial delay in seconds
+
+        for attempt in range(1, max_retries + 1):
+            try:
+                response = self.client.models.generate_content(
+                    model=GEMINI_MODEL,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json",
+                        response_schema=ArtigoClassificado,
+                        temperature=0.1  # Low temperature for deterministic/objective evaluation
+                    )
                 )
-            )
 
-            # Validate and parse structured response using Pydantic
-            raw_text = response.text
-            if not raw_text:
-                raise ValueError("Empty response text from Gemini API")
+                # Validate and parse structured response using Pydantic
+                raw_text = response.text
+                if not raw_text:
+                    raise ValueError("Empty response text from Gemini API")
 
-            # Parse JSON using model validation
-            classification = ArtigoClassificado.model_validate_json(raw_text)
-            return classification
+                # Parse JSON using model validation
+                classification = ArtigoClassificado.model_validate_json(raw_text)
+                return classification
 
-        except Exception as e:
-            logger.error(f"Error classifying article '{title}': {e}", exc_info=True)
-            raise e
+            except Exception as e:
+                logger.warning(
+                    f"Tentativa {attempt}/{max_retries} falhou para '{title}': {e}. "
+                    f"Aguardando {retry_delay}s antes de tentar novamente..."
+                )
+                if attempt == max_retries:
+                    logger.error(f"Erro persistente após {max_retries} tentativas para '{title}': {e}", exc_info=True)
+                    raise e
+                time.sleep(retry_delay)
+                retry_delay *= 2.0  # Exponential backoff

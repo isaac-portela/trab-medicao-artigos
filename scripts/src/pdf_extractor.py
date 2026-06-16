@@ -8,7 +8,7 @@ class PDFExtractor:
     """Class responsible for extracting and cleaning text from PDF files."""
 
     @staticmethod
-    def extract_text(pdf_path: Path, max_chars: int = 120000) -> str:
+    def extract_text(pdf_path: Path, max_chars: int = 80000) -> str:
         """
         Extracts and cleans text from a PDF file.
         Truncates the output to `max_chars` for API efficiency.
