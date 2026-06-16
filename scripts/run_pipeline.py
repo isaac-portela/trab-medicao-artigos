@@ -23,8 +23,21 @@ logging.basicConfig(
 logger = logging.getLogger("run_pipeline")
 
 def main():
-    # Load environment variables from .env file if it exists
-    load_dotenv()
+    # Load environment variables from .env file (checking multiple common directories)
+    dotenv_paths = [
+        Path.cwd() / ".env",
+        Path(__file__).resolve().parent / ".env",
+        Path(__file__).resolve().parent.parent / ".env",
+        Path(__file__).resolve().parent / "src" / ".env"
+    ]
+    loaded = False
+    for path in dotenv_paths:
+        if path.exists():
+            load_dotenv(dotenv_path=path)
+            loaded = True
+            break
+    if not loaded:
+        load_dotenv()
     
     parser = argparse.ArgumentParser(description="Pipeline de Classificação de Artigos usando Gemini API")
     parser.add_argument("--dry-run", action="store_true", help="Executa o pipeline para apenas 1 artigo como teste seco.")
