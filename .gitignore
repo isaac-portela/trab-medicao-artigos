@@ -5,3 +5,6 @@ __pycache__/
 *.xlsx
 .idea/
 .vscode/
+.env
+.env.*
+*.env
