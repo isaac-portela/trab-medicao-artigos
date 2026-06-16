@@ -8,6 +8,7 @@ from tqdm import tqdm
 # Adjust path to import from the src directory
 sys.path.append(str(Path(__file__).resolve().parent))
 
+from dotenv import load_dotenv
 from src.pipeline import ClassificationPipeline
 from src.config import OUTPUT_EXCEL
 
@@ -22,6 +23,9 @@ logging.basicConfig(
 logger = logging.getLogger("run_pipeline")
 
 def main():
+    # Load environment variables from .env file if it exists
+    load_dotenv()
+    
     parser = argparse.ArgumentParser(description="Pipeline de Classificação de Artigos usando Gemini API")
     parser.add_argument("--dry-run", action="store_true", help="Executa o pipeline para apenas 1 artigo como teste seco.")
     parser.add_argument("--delay", type=float, default=4.0, help="Tempo de espera (em segundos) entre as chamadas da API (evita limites de requisição).")
