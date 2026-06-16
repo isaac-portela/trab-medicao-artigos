@@ -2,43 +2,43 @@
 
 Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de download manual, geralmente por ACM/paywall, link ausente ou página sem PDF direto.
 
-- [ ] On Wasted Contributions: Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023) — Joao Pedro Aguiar do Prado
+- [x] On Wasted Contributions: Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023) — Joao Pedro Aguiar do Prado
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\01 - On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests (2023`
   - Link: https://doi.org/10.1145/3530785
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (2023) — Vitor Rebula Nogueira
+- [x] A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (2023) — Vitor Rebula Nogueira
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\02 - A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics (20`
   - Link: https://ieeexplore.ieee.org/document/10336287
   - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10336287
   - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/10336287/;jsessionid=7F3BC67EBCBCE11BFD83687D2213CC0F)
-- [ ] Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experiments (2024) — Joana Iuna de Morais
+- [x] Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experiments (2024) — Joana Iuna de Morais
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\03 - Recommendations for Analysing and Meta-Analysing Small Sample Size Software Engineering Experim`
   - Link: https://dl.acm.org/doi/abs/10.1007/s10664-024-10504-1
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engineering (2014) — Erica Alves dos Santos
+- [x] A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engineering (2014) — Erica Alves dos Santos
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\04 - A Hitchhiker’s Guide to Statistical Tests for Assessing Randomized Algorithms in Software Engin`
   - Link: https://doi.org/10.1002/stvr.1486
   - Tentativa: https://doi.org/10.1002/stvr.1486
   - Status: HTTP 403
-- [ ] On the Relationship Between Story Points and Development Effort in Agile Open-Source Software — Joao Antonio Nascimento Pires
+- [x] On the Relationship Between Story Points and Development Effort in Agile Open-Source Software — Joao Antonio Nascimento Pires
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\05 - On the Relationship Between Story Points and Development Effort in Agile Open-Source Software`
   - Link: https://dl.acm.org/doi/10.1145/3544902.3546238
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] ADmM: Anomaly Detection for Microservice Systems with Incomplete Metrics — Vinicius Xavier Ramalho
+- [x] ADmM: Anomaly Detection for Microservice Systems with Incomplete Metrics — Vinicius Xavier Ramalho
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\06 - ADmM Anomaly Detection for Microservice Systems with Incomplete Metrics`
   - Link: https://dl.acm.org/doi/10.1145/3801729
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Machine Learning Approach to Vulnerability Detection Combining Software Metrics and Topic Modelling: Evidence from Smart Contracts — Mariana Almeida Henriques
+- [x] A Machine Learning Approach to Vulnerability Detection Combining Software Metrics and Topic Modelling: Evidence from Smart Contracts — Mariana Almeida Henriques
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\07 - A Machine Learning Approach to Vulnerability Detection Combining Software Metrics and Topic Mod`
   - Link: ScienceDirect (link não informado no texto).
@@ -50,37 +50,37 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://www.nature.com/articles/s41598-024-56706-x
   - Tentativa: https://www.nature.com/articles/s41598-024-56706-x.pdf
   - Status: baixado de https://www.nature.com/articles/s41598-024-56706-x.pdf?error=cookies_not_supported&code=de91fd54-7a37-441d-83ab-b4dbff2b3302
-- [ ] CI/CD Pipelines Evolution and Restructuring: A Qualitative and Quantitative Study — Ian dos Reis Novais
+- [x] CI/CD Pipelines Evolution and Restructuring: A Qualitative and Quantitative Study — Ian dos Reis Novais
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\09 - CI CD Pipelines Evolution and Restructuring A Qualitative and Quantitative Study`
   - Link: https://ieeexplore.ieee.org/document/9609201
   - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9609201
   - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/9609201/;jsessionid=BAAAB759E44A5D7881257810E42039DA)
-- [ ] An Empirical Investigation of Factors Causing Scope Creep in Agile Global Software Development Context: A Conceptual Model for Project Managers — Gustavo Pimentel Carvalho Costa
+- [x] An Empirical Investigation of Factors Causing Scope Creep in Agile Global Software Development Context: A Conceptual Model for Project Managers — Gustavo Pimentel Carvalho Costa
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\10 - An Empirical Investigation of Factors Causing Scope Creep in Agile Global Software Development`
   - Link: https://www.researchgate.net/publication/353502652_An_Empirical_Investigation_of_Factors_Causing_Scope_Creep_in_Agile_Global_Software_Development_Context_A_Conceptual_Model_for_Project_Managers
   - Tentativa: https://www.researchgate.net/publication/353502652_An_Empirical_Investigation_of_Factors_Causing_Scope_Creep_in_Agile_Global_Software_Development_Context_A_Conceptual_Model_for_Project_Managers
   - Status: HTTP 403
-- [ ] A Quality Model-Based Approach for Measuring User Interface Aesthetics with Grace — Lucas de Carvalho Barbosa
+- [x] A Quality Model-Based Approach for Measuring User Interface Aesthetics with Grace — Lucas de Carvalho Barbosa
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\11 - A Quality Model-Based Approach for Measuring User Interface Aesthetics with Grace`
   - Link: https://dl.acm.org/doi/epdf/10.1145/3593224
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Measuring the Impact of Scope Changes on Project Plan Using EVM — Roberta Sophia Carvalho Silva
+- [x] Measuring the Impact of Scope Changes on Project Plan Using EVM — Roberta Sophia Carvalho Silva
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\12 - Measuring the Impact of Scope Changes on Project Plan Using EVM`
   - Link: https://ieeexplore.ieee.org/abstract/document/9172051
   - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9172051
   - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9172051)
-- [ ] Source Code Metrics for Software Defects Prediction — Guilherme Gomes de Brites
+- [x] Source Code Metrics for Software Defects Prediction — Guilherme Gomes de Brites
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\13 - Source Code Metrics for Software Defects Prediction`
   - Link: https://dl.acm.org/doi/10.1145/3555776.3577809
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Conceptual Model to Support Teaching of Software Engineering Controlled (Quasi-)Experiments — Pedro Lucas Sousa e Silva
+- [x] A Conceptual Model to Support Teaching of Software Engineering Controlled (Quasi-)Experiments — Pedro Lucas Sousa e Silva
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\14 - A Conceptual Model to Support Teaching of Software Engineering Controlled (Quasi-)Experiments`
   - Link: https://dl.acm.org/doi/10.1145/3613372.3614202
@@ -92,13 +92,13 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://legacyfileshare.elsevier.com/promis_misc/525444systematicreviewsguide.pdf
   - Tentativa: https://legacyfileshare.elsevier.com/promis_misc/525444systematicreviewsguide.pdf
   - Status: ja existia
-- [ ] A Tale of Two Cities: Software Developers Working from Home During the COVID-19 Pandemic — Nicolas Almeida Prado da Silva
+- [x] A Tale of Two Cities: Software Developers Working from Home During the COVID-19 Pandemic — Nicolas Almeida Prado da Silva
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\16 - A Tale of Two Cities Software Developers Working from Home During the COVID-19 Pandemic`
   - Link: https://dl.acm.org/doi/full/10.1145/3487567
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Quality of AI-Generated vs. Human-Generated Code — Paulo Victor Pimenta Rubinger
+- [x] Quality of AI-Generated vs. Human-Generated Code — Paulo Victor Pimenta Rubinger
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\17 - Quality of AI-Generated vs. Human-Generated Code`
   - Link: https://ieeexplore.ieee.org/document/10974782
@@ -110,13 +110,13 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://bib.pucminas.br/pergamumweb/download/4252bf54-4309-4692-af85-0dd6ff43d57f.pdf
   - Tentativa: https://bib.pucminas.br/pergamumweb/download/4252bf54-4309-4692-af85-0dd6ff43d57f.pdf
   - Status: ja existia
-- [ ] A Large-Scale Empirical Study on Self-Admitted Technical Debt — Eduardo Henrique Moreira dos Santos
+- [x] A Large-Scale Empirical Study on Self-Admitted Technical Debt — Eduardo Henrique Moreira dos Santos
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\19 - A Large-Scale Empirical Study on Self-Admitted Technical Debt`
   - Link: https://dl.acm.org/doi/abs/10.1145/2901739.2901742
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Do Internal Software Metrics Have Relationship with Fault-Proneness and Change-Proneness? (2025) — Jose Victor Mendes Dias
+- [x] Do Internal Software Metrics Have Relationship with Fault-Proneness and Change-Proneness? (2025) — Jose Victor Mendes Dias
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\20 - Do Internal Software Metrics Have Relationship with Fault-Proneness and Change-Proneness (2025)`
   - Link: https://doi.org/10.1134/S0361768824602400
@@ -134,13 +134,13 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://www.inf.puc-rio.br/~inf2007/docs/artigos/Experimentation%20in%20Software%20Engineering.pdf
   - Tentativa: https://www.inf.puc-rio.br/~inf2007/docs/artigos/Experimentation%20in%20Software%20Engineering.pdf
   - Status: ja existia
-- [ ] Unlocking Inclusive Education: A Quality Assessment of Software Design in Applications for Children with Autism (2024) — Rubia Coelho de Matos
+- [x] Unlocking Inclusive Education: A Quality Assessment of Software Design in Applications for Children with Autism (2024) — Rubia Coelho de Matos
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\23 - Unlocking Inclusive Education A Quality Assessment of Software Design in Applications for Child`
   - Link: https://www.sciencedirect.com/science/article/pii/S0164121224002097
   - Tentativa: https://www.sciencedirect.com/science/article/pii/S0164121224002097
   - Status: HTTP 403
-- [ ] Software Cost and Effort Estimation: Current Approaches and Future Trends — Yan Mariz Magalhães Cota
+- [x] Software Cost and Effort Estimation: Current Approaches and Future Trends — Yan Mariz Magalhães Cota
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\24 - Software Cost and Effort Estimation Current Approaches and Future Trends`
   - Link: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10243029
@@ -152,7 +152,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://arxiv.org/abs/2603.27130
   - Tentativa: https://arxiv.org/pdf/2603.27130.pdf
   - Status: ja existia
-- [ ] Impact of CMMI Based Software Process Maturity on COCOMO II’s Effort Estimation — Caio Batella
+- [x] Impact of CMMI Based Software Process Maturity on COCOMO II’s Effort Estimation — Caio Batella
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\26 - Impact of CMMI Based Software Process Maturity on COCOMO II’s Effort Estimation`
   - Link: https://www.researchgate.net/publication/220413934_Impact_of_CMMI_based_software_process_maturity_on_COCOMO_II’s_effort_estimation
@@ -164,7 +164,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://ieeexplore.ieee.org/abstract/document/5386963
   - Tentativa: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5386963
   - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/5386963/;jsessionid=1E252AE8D449A192ECD9401925573D0C)
-- [ ] Software Product Metrics (2002) — Lucas Cerqueira Azevedo
+- [x] Software Product Metrics (2002) — Lucas Cerqueira Azevedo
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\28 - Software Product Metrics (2002)`
   - Link: Autor: Wei Li — Link não informado.
@@ -176,13 +176,13 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://www.cs.umd.edu/users/mvz/handouts/gqm.pdf
   - Tentativa: https://www.cs.umd.edu/users/mvz/handouts/gqm.pdf
   - Status: ja existia
-- [ ] Towards Improving Experimentation in Software Engineering — Filipe Faria Melo
+- [x] Towards Improving Experimentation in Software Engineering — Filipe Faria Melo
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\30 - Towards Improving Experimentation in Software Engineering`
   - Link: https://dl.acm.org/doi/10.1145/3474624.3477073
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Software Product Quality Metrics: A Systematic Mapping Study (2021) — Mauricio Fernandes Leite
+- [x] Software Product Quality Metrics: A Systematic Mapping Study (2021) — Mauricio Fernandes Leite
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\31 - Software Product Quality Metrics A Systematic Mapping Study (2021)`
   - Link: DOI: https://doi.org/10.1109/ACCESS.2021.3054730
@@ -194,31 +194,31 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://doi.org/10.48550/arXiv.2503.10977
   - Tentativa: https://arxiv.org/pdf/2503.10977.pdf
   - Status: ja existia
-- [ ] The SPACE of Developer Productivity: There’s More to It Than You Think (2021) — Kayler de Freitas Moura
+- [] The SPACE of Developer Productivity: There’s More to It Than You Think (2021) — Kayler de Freitas Moura
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\33 - The SPACE of Developer Productivity There’s More to It Than You Think (2021)`
   - Link: https://queue.acm.org/detail.cfm?id=3454124
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Definição de um Processo de Medição de Software Baseado em Seis Sigma e CMMI (2014) — Ana Luiza Santos Gomes
+- [x] Definição de um Processo de Medição de Software Baseado em Seis Sigma e CMMI (2014) — Ana Luiza Santos Gomes
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\34 - Definição de um Processo de Medição de Software Baseado em Seis Sigma e CMMI (2014)`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Evaluation of Software Product Quality Metrics (2020) — Lucas Carvalho Peres
+- [x] Evaluation of Software Product Quality Metrics (2020) — Lucas Carvalho Peres
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\35 - Evaluation of Software Product Quality Metrics (2020)`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Evidence is All We Need: Do Self-Admitted Technical Debts Impact Method-Level Maintenance? (2025) — Amanda Bueno Campos Peixoto
+- [x] Evidence is All We Need: Do Self-Admitted Technical Debts Impact Method-Level Maintenance? (2025) — Amanda Bueno Campos Peixoto
   - Grupo: Lourdes 2026/1
   - Pasta: `artigos\Lourdes 2026 1\36 - Evidence is All We Need Do Self-Admitted Technical Debts Impact Method-Level Maintenance (2025)`
   - Link: DOI: https://doi.org/10.1109/MSR66628.2025.00118
   - Tentativa: https://doi.org/10.1109/MSR66628.2025.00118
   - Status: resposta nao parece PDF (text/html;charset=UTF-8; final=https://ieeexplore.ieee.org/document/11025748/)
-- [ ] Robust Statistical Methods for Empirical Software Engineering (2016) — Matheus Vinicius Mota Rodrigues
+- [x] Robust Statistical Methods for Empirical Software Engineering (2016) — Matheus Vinicius Mota Rodrigues
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\37 - Robust Statistical Methods for Empirical Software Engineering (2016)`
   - Link: https://www.researchgate.net/publication/303640350_Robust_Statistical_Methods_for_Empirical_Software_Engineering
@@ -236,25 +236,25 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: http://ijeais.org/wp-content/uploads/2025/4/IJAAR250409.pdf
   - Tentativa: http://ijeais.org/wp-content/uploads/2025/4/IJAAR250409.pdf
   - Status: ja existia
-- [ ] Techniques for Calculating Software Product Metric Thresholds (2021) — Lucas Ferreira Garcia
+- [x] Techniques for Calculating Software Product Metric Thresholds (2021) — Lucas Ferreira Garcia
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\40 - Techniques for Calculating Software Product Metric Thresholds (2021)`
   - Link: https://www.mdpi.com/2076-3417/11/23/11377
   - Tentativa: https://www.mdpi.com/2076-3417/11/23/11377/pdf?download=1
   - Status: resposta nao parece PDF (text/html; final=https://www.mdpi.com/2076-3417/11/23/11377/pdf?download=1)
-- [ ] An External Replication on the Effects of Test-Driven Development Using a Multi-site Blind Analysis Approach (2016) — Joao Victor Salim Ribeiro Guimaraes Trad
+- [x] An External Replication on the Effects of Test-Driven Development Using a Multi-site Blind Analysis Approach (2016) — Joao Victor Salim Ribeiro Guimaraes Trad
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\41 - An External Replication on the Effects of Test-Driven Development Using a Multi-site Blind Anal`
   - Link: https://dl.acm.org/doi/10.1145/2961111.2962592
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Software Development and Maintenance Effort Estimation Using Function Points and Simpler Functional Measures — Thiago Vitor Pereira Perdigao
+- [x] Software Development and Maintenance Effort Estimation Using Function Points and Simpler Functional Measures — Thiago Vitor Pereira Perdigao
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\42 - Software Development and Maintenance Effort Estimation Using Function Points and Simpler Functi`
   - Link: https://www.mdpi.com/2674-113X/3/4/22
   - Tentativa: https://www.mdpi.com/2674-113X/3/4/22/pdf?download=1
   - Status: resposta nao parece PDF (text/html; final=https://www.mdpi.com/2674-113X/3/4/22/pdf?download=1)
-- [ ] A Tool-Based Perspective on Software Code Maintainability Metrics: A Systematic Literature Review — João Pedro Queiroz Rocha
+- [x] A Tool-Based Perspective on Software Code Maintainability Metrics: A Systematic Literature Review — João Pedro Queiroz Rocha
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\43 - A Tool-Based Perspective on Software Code Maintainability Metrics A Systematic Literature Revie`
   - Link: https://onlinelibrary.wiley.com/doi/10.1155/2020/8840389
@@ -284,7 +284,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://arxiv.org/pdf/2307.12082
   - Tentativa: https://arxiv.org/pdf/2307.12082
   - Status: ja existia
-- [ ] Impact of Evaluating Software Complexity Measures (2025) — Gustavo Menezes Barbosa
+- [x] Impact of Evaluating Software Complexity Measures (2025) — Gustavo Menezes Barbosa
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\48 - Impact of Evaluating Software Complexity Measures (2025)`
   - Link: https://ieeexplore.ieee.org/document/10854357
@@ -296,7 +296,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: http://link.springer.com/article/10.1007/s00769-024-01593-y
   - Tentativa: https://link.springer.com/content/pdf/10.1007/s00769-024-01593-y.pdf
   - Status: ja existia
-- [ ] Process Metrics for Software Defect Prediction in Object-Oriented Programs — Gabriel Henrique Silva Pereira
+- [x] Process Metrics for Software Defect Prediction in Object-Oriented Programs — Gabriel Henrique Silva Pereira
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\50 - Process Metrics for Software Defect Prediction in Object-Oriented Programs`
   - Link: https://www-periodicos-capes-gov-br.ez93.periodicos.capes.gov.br/index.php/acervo/buscador.html?task=detalhes&amp;source=all&amp;id=W3001993719
@@ -308,19 +308,19 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://sol.sbc.org.br/index.php/cibse/article/view/28442
   - Tentativa: https://sol.sbc.org.br/index.php/cibse/article/view/28442
   - Status: ja existia
-- [ ] Measurement and Analysis in CMMI with Six Sigma Methodology and ISO/IEC/IEEE 15939 (2023) — Gabriel Ferreira Amaral
+- [x] Measurement and Analysis in CMMI with Six Sigma Methodology and ISO/IEC/IEEE 15939 (2023) — Gabriel Ferreira Amaral
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\52 - Measurement and Analysis in CMMI with Six Sigma Methodology and ISO IEC IEEE 15939 (2023)`
   - Link: https://publicacoes.unifal-mg.edu.br/revistas/index.php/sigmae/article/view/597/1561
   - Tentativa: https://publicacoes.unifal-mg.edu.br/revistas/index.php/sigmae/article/view/597/1561
   - Status: resposta nao parece PDF (text/html; charset=utf-8; final=https://publicacoes.unifal-mg.edu.br/revistas/index.php/sigmae/article/view/597/1561)
-- [ ] Formato para Especificação de Requisitos Conjecturais no Contexto da Experimentação Contínua em Engenharia de Software (2023) — Augusto Noronha Leite
+- [x] Formato para Especificação de Requisitos Conjecturais no Contexto da Experimentação Contínua em Engenharia de Software (2023) — Augusto Noronha Leite
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\53 - Formato para Especificação de Requisitos Conjecturais no Contexto da Experimentação Contínua em`
   - Link: artigo anexado (3144.pdf).
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Web System for Metrics Control Applying the GQM Method in a Software Development Center (2025) — Gabriel Faria de Oliveira
+- [x] Web System for Metrics Control Applying the GQM Method in a Software Development Center (2025) — Gabriel Faria de Oliveira
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\54 - Web System for Metrics Control Applying the GQM Method in a Software Development Center (2025)`
   - Link: Link não informado.
@@ -332,7 +332,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://sedici.unlp.edu.ar/handle/10915/178461
   - Tentativa: https://sedici.unlp.edu.ar/handle/10915/178461
   - Status: baixado de http://sedici.unlp.edu.ar/bitstream/handle/10915/178461/Documento_completo.pdf?sequence=1
-- [ ] Quality Metrics in Agile Software Development — Fernando Antônio Ferreira Ibrahim
+- [x] Quality Metrics in Agile Software Development — Fernando Antônio Ferreira Ibrahim
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\56 - Quality Metrics in Agile Software Development`
   - Link: https://www.researchgate.net/publication/329657455_Quality_metrics_in_Agile_Software_Development_Projects
@@ -344,13 +344,13 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://arxiv.org/abs/2411.11908
   - Tentativa: https://arxiv.org/pdf/2411.11908.pdf
   - Status: ja existia
-- [ ] Towards Improving Experimentation in Software Engineering — Arthur Ferreira Costa
+- [x] Towards Improving Experimentation in Software Engineering — Arthur Ferreira Costa
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\58 - Towards Improving Experimentation in Software Engineering`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Software Metrics Classification for Agile Scrum Process: A Literature Review — Ana Carolina Caldas de Mello
+- [x] Software Metrics Classification for Agile Scrum Process: A Literature Review — Ana Carolina Caldas de Mello
   - Grupo: Lourdes 2025/2
   - Pasta: `artigos\Lourdes 2025 2\59 - Software Metrics Classification for Agile Scrum Process A Literature Review`
   - Link: https://ieeexplore.ieee.org/document/8864244
@@ -362,73 +362,73 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://arxiv.org/abs/2106.06141
   - Tentativa: https://arxiv.org/pdf/2106.06141.pdf
   - Status: ja existia
-- [ ] Software Quality Models: Exploratory Review (2021) — Amanda Bicalho Silva
+- [x] Software Quality Models: Exploratory Review (2021) — Amanda Bicalho Silva
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\61 - Software Quality Models Exploratory Review (2021)`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Study of Component Based Software System Metrics (2016) — Pedro Henrique Pires Rodrigues
+- [x] A Study of Component Based Software System Metrics (2016) — Pedro Henrique Pires Rodrigues
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\62 - A Study of Component Based Software System Metrics (2016)`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] The Experimental Paradigm in Software Engineering (Victor R. Basili) — André Teiichi Santos Hyodo
+- [x] The Experimental Paradigm in Software Engineering (Victor R. Basili) — André Teiichi Santos Hyodo
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\63 - The Experimental Paradigm in Software Engineering (Victor R. Basili)`
   - Link: https://scholar.google.com.br/scholar?hl=pt-BR&amp;as_sdt=0%2C5&amp;q=Basili%2C+V.+R.+%281993%29.+The+Experimental+Paradigm+in+Software+Engineering.&amp;btnG=#d=gs_qabs&amp;t=1756430343634&amp;u=%23p%3D65SKNsJhcIMJ
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Study on Software Metrics and its Impact on Software Quality — Ana Flávia de Carvalho Santos
+- [x] A Study on Software Metrics and its Impact on Software Quality — Ana Flávia de Carvalho Santos
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\64 - A Study on Software Metrics and its Impact on Software Quality`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Software Process Measurement and Related Challenges in Agile Software Development: A Multiple Case Study — Sophia Mendes Rabelo
+- [x] Software Process Measurement and Related Challenges in Agile Software Development: A Multiple Case Study — Sophia Mendes Rabelo
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\65 - Software Process Measurement and Related Challenges in Agile Software Development A Multiple Ca`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Adjustment Level Metrics for Requirements in Project Management (2021) — Estêvão de Faria Rodrigues
+- [x] Adjustment Level Metrics for Requirements in Project Management (2021) — Estêvão de Faria Rodrigues
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\66 - Adjustment Level Metrics for Requirements in Project Management (2021)`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Systematic Review of Productivity Factors in Software Development — Gabriel Henrique Miranda Rodrigues
+- [X] A Systematic Review of Productivity Factors in Software Development — Gabriel Henrique Miranda Rodrigues
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\67 - A Systematic Review of Productivity Factors in Software Development`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Top Challenges from the First Practical Online Controlled Experiments Summit (2019) — João Victor Temponi Daltro de Castro
+- [X] Top Challenges from the First Practical Online Controlled Experiments Summit (2019) — João Victor Temponi Daltro de Castro
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\68 - Top Challenges from the First Practical Online Controlled Experiments Summit (2019)`
   - Link: https://www.researchgate.net/publication/333136404_Top_Challenges_from_the_first_Practical_Online_Controlled_Experiments_Summit
   - Tentativa: https://www.researchgate.net/publication/333136404_Top_Challenges_from_the_first_Practical_Online_Controlled_Experiments_Summit
   - Status: HTTP 403
-- [ ] A Review and Analysis of Software Complexity Metrics in Structural Testing (2013) — Gustavo Pereira de Oliveira
+- [x] A Review and Analysis of Software Complexity Metrics in Structural Testing (2013) — Gustavo Pereira de Oliveira
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\69 - A Review and Analysis of Software Complexity Metrics in Structural Testing (2013)`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Guidelines for Performing Systematic Literature Reviews in Software Engineering — Lúcio Alves Almeida Neto
+- [x] Guidelines for Performing Systematic Literature Reviews in Software Engineering — Lúcio Alves Almeida Neto
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\70 - Guidelines for Performing Systematic Literature Reviews in Software Engineering`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Application of Statistical Methods in Software Engineering: Theory and Practice — Lucas Randazzo
+- [x] Application of Statistical Methods in Software Engineering: Theory and Practice — Lucas Randazzo
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\71 - Application of Statistical Methods in Software Engineering Theory and Practice`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A Survey of Controlled Experiments in Software Engineering — Luiz Filipe Nery Costa
+- [x] A Survey of Controlled Experiments in Software Engineering — Luiz Filipe Nery Costa
   - Grupo: Coração Eucarístico 2025/2
   - Pasta: `artigos\Coração Eucarístico 2025 2\72 - A Survey of Controlled Experiments in Software Engineering`
   - Link: Link não informado.
@@ -440,7 +440,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://www.chimia.ch/chimia/article/view/2023_7
   - Tentativa: https://www.chimia.ch/chimia/article/view/2023_7
   - Status: ja existia
-- [ ] Assessment of the Level of Software Development Using CMMI-Dev 1.3 on the Unjani Official Web — Pedro Negri Leão Lambert
+- [x] Assessment of the Level of Software Development Using CMMI-Dev 1.3 on the Unjani Official Web — Pedro Negri Leão Lambert
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\74 - Assessment of the Level of Software Development Using CMMI-Dev 1.3 on the Unjani Official Web`
   - Link: Link não informado.
@@ -452,25 +452,25 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Metrics for Experimentation Programs: Categories, Benefits and Challenges — André Cota Guimarães
+- [x] Metrics for Experimentation Programs: Categories, Benefits and Challenges — André Cota Guimarães
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\76 - Metrics for Experimentation Programs Categories, Benefits and Challenges`
   - Link: Agile Processes in Software Engineering and Extreme Programming 26th International Conference on Agile Software Development, XP 2025.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Deep multi-metrics learning for mobile app defect prediction using code and process metrics — Guilherme Roberto Ferreira Santos
+- [X] Deep multi-metrics learning for mobile app defect prediction using code and process metrics — Guilherme Roberto Ferreira Santos
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\77 - Deep multi-metrics learning for mobile app defect prediction using code and process metrics`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Usage patterns of software product metrics in assessing developers’ output: A comprehensive study — Gustavo Delfino Guimarães
+- [x] Usage patterns of software product metrics in assessing developers’ output: A comprehensive study — Gustavo Delfino Guimarães
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\78 - Usage patterns of software product metrics in assessing developers’ output A comprehensive stud`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Software Quality Measurement Analysis on Academic Information Systems — Jhonatan Gutemberg Rosa Ferreira
+- [x] Software Quality Measurement Analysis on Academic Information Systems — Jhonatan Gutemberg Rosa Ferreira
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\79 - Software Quality Measurement Analysis on Academic Information Systems`
   - Link: Link não informado.
@@ -482,31 +482,31 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://ceur-ws.org/Vol-3543/paper8.pdf
   - Tentativa: https://ceur-ws.org/Vol-3543/paper8.pdf
   - Status: ja existia
-- [ ] Empirical Strategies in Software Engineering Research: A Literature Survey — Lucas Giovine Madureira Falcone
+- [x] Empirical Strategies in Software Engineering Research: A Literature Survey — Lucas Giovine Madureira Falcone
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\81 - Empirical Strategies in Software Engineering Research A Literature Survey`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] A/B testing: A systematic literature review — Lucas Maia Rocha
+- [x] A/B testing: A systematic literature review — Lucas Maia Rocha
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\82 - A B testing A systematic literature review`
   - Link: Link não informado.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Corporate Dominance in Open Source Ecosystems: A Case Study of OpenStack — Miguel Amaral Lessa Xavier
+- [x] Corporate Dominance in Open Source Ecosystems: A Case Study of OpenStack — Miguel Amaral Lessa Xavier
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\83 - Corporate Dominance in Open Source Ecosystems A Case Study of OpenStack`
   - Link: https://dl.acm.org/doi/epdf/10.1145/3540250.3549117
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] How Many Papers Should You Review? A Research Synthesis of Systematic Literature Reviews in Software Engineering — Matheus Caetano Rocha
+- [x] How Many Papers Should You Review? A Research Synthesis of Systematic Literature Reviews in Software Engineering — Matheus Caetano Rocha
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\84 - How Many Papers Should You Review A Research Synthesis of Systematic Literature Reviews in Soft`
   - Link: anexo local não fornecido.
   - Tentativa: nao tentado
   - Status: sem URL direta de PDF ou fonte manual
-- [ ] Assessing Quality Through Use: A Usability-Based Evaluation of the Conta gov.br Authentication Platform — Isaac Portela da Silva
+- [x] Assessing Quality Through Use: A Usability-Based Evaluation of the Conta gov.br Authentication Platform — Isaac Portela da Silva
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\85 - Assessing Quality Through Use A Usability-Based Evaluation of the Conta gov.br Authentication P`
   - Link: Link não informado.
@@ -518,7 +518,7 @@ Marcados com `[x]` foram baixados em `artigo.pdf`. Itens `[ ]` precisam de downl
   - Link: https://www.sciencedirect.com/science/article/abs/pii/S0950584901002002
   - Tentativa: https://www.sciencedirect.com/science/article/abs/pii/S0950584901002002
   - Status: HTTP 403
-- [ ] Can Developers Prompt? A Controlled Experiment for Code Documentation Generation — Julia Medeiros Silva
+- [x] Can Developers Prompt? A Controlled Experiment for Code Documentation Generation — Julia Medeiros Silva
   - Grupo: Postagem adicional
   - Pasta: `artigos\Postagem adicional\87 - Can Developers Prompt A Controlled Experiment for Code Documentation Generation`
   - Link: Link não informado.

@@ -54,20 +54,48 @@ const PDF_SELECTORS = [
   'a[href*=".pdf" i]',
   'a[href*="/pdf" i]',
   'a[href*="epdf" i]',
+  'a[href*="/stamp/stamp.jsp" i]',
+  'a[href*="arnumber=" i]',
+  'a[aria-label*="PDF" i]',
+  'button[aria-label*="PDF" i]',
   'a:has-text("PDF")',
   'a:has-text("Download PDF")',
   'a:has-text("Article PDF")',
   'a:has-text("Full Text PDF")',
+  'a:has-text("View PDF")',
   'a:has-text("Texto completo")',
   'a:has-text("Baixar PDF")',
   'button:has-text("PDF")',
   'button:has-text("Download PDF")',
   'button:has-text("Article PDF")',
   'button:has-text("Full Text PDF")',
+  'button:has-text("View PDF")',
 ];
 
 const ACM_CAPES_SEARCH_TEMPLATE =
   "https://dl-acm-org.ez93.periodicos.capes.gov.br/action/doSearch?AllField={query}&expand=all";
+const ACM_CAPES_HOME = "https://dl-acm-org.ez93.periodicos.capes.gov.br/";
+const IEEE_CAPES_HOME = "https://ieeexplore-ieee-org.ez93.periodicos.capes.gov.br/Xplore/home.jsp";
+
+const SEARCH_PROVIDERS = {
+  acm: {
+    home: ACM_CAPES_HOME,
+    selectors: [
+      'input[aria-label="Search"][name="AllField"]',
+      'input[name="AllField"]',
+      'input.quick-search__input',
+      'input[type="search"]',
+    ],
+  },
+  ieee: {
+    home: IEEE_CAPES_HOME,
+    selectors: [
+      'input[aria-label="main"]',
+      'input.Typeahead-input',
+      'input[type="search"]',
+    ],
+  },
+};
 
 function usage() {
   return `Usage:
@@ -83,6 +111,7 @@ Options:
   --portal <url>              URL opened by --login. Default: https://www-periodicos-capes-gov-br.ezl.periodicos.capes.gov.br/
   --search-url-template <url> URL template for missing links. Use {query}.
   --acm-capes-search          Search missing-link articles directly on ACM via CAPES.
+  --search-provider <name>    Search missing-link articles from a home page. Values: acm, ieee.
   --headless                  Run without visible browser.
   --limit <n>                 Process only the first n queued articles.
   --delay-ms <n>              Delay between articles. Default: 2500
@@ -90,6 +119,7 @@ Options:
   --dry-run                   Print queue only.
   --overwrite                 Replace existing artigo.pdf files.
   --interactive-missing       Pause when automation cannot find a PDF.
+  --keep-open                 Keep the browser open until you press Enter.
 `;
 }
 
@@ -106,6 +136,7 @@ function parseArgs(argv) {
     dryRun: false,
     overwrite: false,
     interactiveMissing: false,
+    keepOpen: false,
   };
 
   for (let i = 0; i < argv.length; i += 1) {
@@ -123,6 +154,7 @@ function parseArgs(argv) {
     else if (arg === "--portal") args.portal = next();
     else if (arg === "--search-url-template") args.searchUrlTemplate = next();
     else if (arg === "--acm-capes-search") args.searchUrlTemplate = ACM_CAPES_SEARCH_TEMPLATE;
+    else if (arg === "--search-provider") args.searchProvider = next().toLowerCase();
     else if (arg === "--limit") args.limit = Number.parseInt(next(), 10);
     else if (arg === "--delay-ms") args.delayMs = Number.parseInt(next(), 10);
     else if (arg === "--timeout-ms") args.timeoutMs = Number.parseInt(next(), 10);
@@ -131,6 +163,7 @@ function parseArgs(argv) {
     else if (arg === "--dry-run") args.dryRun = true;
     else if (arg === "--overwrite") args.overwrite = true;
     else if (arg === "--interactive-missing") args.interactiveMissing = true;
+    else if (arg === "--keep-open") args.keepOpen = true;
     else throw new Error(`Unknown option: ${arg}`);
   }
   return args;
@@ -244,6 +277,110 @@ function destinationFor(item) {
   return path.join(item.outDir, "artigo.pdf");
 }
 
+function normalizeForMatch(value) {
+  return (value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function titleScore(expected, candidate) {
+  const expectedWords = new Set(
+    normalizeForMatch(expected)
+      .split(/\s+/)
+      .filter((word) => word.length > 2 && !/^\d+$/.test(word))
+  );
+  const candidateWords = new Set(
+    normalizeForMatch(candidate)
+      .split(/\s+/)
+      .filter((word) => word.length > 2 && !/^\d+$/.test(word))
+  );
+  if (expectedWords.size === 0 || candidateWords.size === 0) return 0;
+  let matches = 0;
+  for (const word of expectedWords) {
+    if (candidateWords.has(word)) matches += 1;
+  }
+  return matches / expectedWords.size;
+}
+
+function isGenericPortalPdf(url) {
+  return /periodicos\.capes\.gov\.br\/images\/documents\//i.test(url);
+}
+
+async function openBestSearchResult(page, item, timeoutMs) {
+  const pageUrl = page.url();
+  const isAcm = /dl-acm-org\.ez93\.periodicos\.capes\.gov\.br/i.test(pageUrl);
+  const isIeee = /ieeexplore-ieee-org\.ez93\.periodicos\.capes\.gov\.br/i.test(pageUrl);
+  if (!isAcm && !isIeee) {
+    return { opened: false, reason: "not an ACM/IEEE search page" };
+  }
+
+  const candidates = await page.evaluate(() =>
+    [...document.querySelectorAll("a[href]")]
+      .map((link) => ({
+        text: (link.textContent || "").replace(/\s+/g, " ").trim(),
+        href: new URL(link.getAttribute("href") || "", window.location.href).href,
+      }))
+      .filter((link) => link.text)
+  );
+
+  let best = null;
+  for (const candidate of candidates) {
+    if (isAcm && !/\/doi\/|\/book\//i.test(candidate.href)) continue;
+    if (isIeee && !/\/document\/\d+/i.test(candidate.href)) continue;
+    const score = titleScore(item.title, candidate.text);
+    if (!best || score > best.score) best = { ...candidate, score };
+  }
+
+  if (!best || best.score < 0.45) {
+    return {
+      opened: false,
+      reason: `no confident ${isAcm ? "ACM" : "IEEE"} result match${
+        best ? ` (best score ${best.score.toFixed(2)}: ${best.text})` : ""
+      }`,
+    };
+  }
+
+  await page.goto(best.href, { waitUntil: "domcontentloaded", timeout: timeoutMs });
+  return {
+    opened: true,
+    reason: `opened ${isAcm ? "ACM" : "IEEE"} result (${best.score.toFixed(2)}): ${best.text}`,
+  };
+}
+
+async function searchFromProviderHome(page, providerName, query, timeoutMs) {
+  const provider = SEARCH_PROVIDERS[providerName];
+  if (!provider) {
+    throw new Error(
+      `Unknown search provider "${providerName}". Use one of: ${Object.keys(SEARCH_PROVIDERS).join(", ")}`
+    );
+  }
+
+  await page.goto(provider.home, { waitUntil: "domcontentloaded", timeout: timeoutMs });
+
+  let searchBox = null;
+  for (const selector of provider.selectors) {
+    const locator = page.locator(selector).first();
+    if ((await locator.count().catch(() => 0)) > 0) {
+      searchBox = locator;
+      break;
+    }
+  }
+  if (!searchBox) {
+    throw new Error(`Could not find search input for provider "${providerName}"`);
+  }
+
+  await searchBox.fill(query, { timeout: timeoutMs });
+  await Promise.all([
+    page.waitForLoadState("domcontentloaded", { timeout: timeoutMs }).catch(() => null),
+    searchBox.press("Enter"),
+  ]);
+
+  return { opened: true, reason: `searched ${providerName} home page for title` };
+}
+
 function existingBrowserExecutable() {
   const candidates = [
     process.env.CHROME_PATH,
@@ -279,11 +416,27 @@ async function launchBrowserContext(args) {
   }
 }
 
+async function waitForExplicitClose(message) {
+  const rl = readline.createInterface({ input, output });
+  try {
+    while (true) {
+      const answer = await rl.question(message);
+      if (answer.trim().toUpperCase() === "FECHAR") return;
+      message = 'Digite FECHAR para fechar o navegador. Enter sozinho mantem aberto: ';
+    }
+  } finally {
+    rl.close();
+  }
+}
+
 async function saveIfPdf(response, dest) {
   if (!response) return { ok: false, reason: "no response" };
   const headers = response.headers();
   const contentType = headers["content-type"] || "";
   const url = response.url();
+  if (isGenericPortalPdf(url)) {
+    return { ok: false, reason: `ignored generic CAPES PDF: ${url}` };
+  }
   if (!/pdf/i.test(contentType) && !/\.pdf(?:$|[?#])/i.test(url)) {
     return { ok: false, reason: `not a pdf response: ${contentType || "unknown"}` };
   }
@@ -298,6 +451,9 @@ async function saveIfPdf(response, dest) {
 }
 
 async function requestPdf(context, url, dest) {
+  if (isGenericPortalPdf(url)) {
+    return { ok: false, reason: `ignored generic CAPES PDF: ${url}` };
+  }
   const response = await context.request.get(url, {
     headers: {
       Accept: "application/pdf,text/html;q=0.9,*/*;q=0.8",
@@ -386,19 +542,35 @@ async function processItem(context, page, item, args) {
 
   ensureDir(item.outDir);
   let targetUrl = item.url;
-  if (!targetUrl && args.searchUrlTemplate) {
+  if (!targetUrl && args.searchProvider) {
+    await searchFromProviderHome(page, args.searchProvider, item.title, args.timeoutMs);
+  } else if (!targetUrl && args.searchUrlTemplate) {
     targetUrl = args.searchUrlTemplate.replace("{query}", encodeURIComponent(item.title));
   }
-  if (!targetUrl) return { status: "missing", note: "no URL and no search template" };
+  if (!targetUrl && !args.searchProvider) return { status: "missing", note: "no URL and no search template/provider" };
 
-  const response = await page.goto(targetUrl, {
-    waitUntil: "domcontentloaded",
-    timeout: args.timeoutMs,
-  }).catch((error) => ({ error }));
-  if (response?.error) return { status: "failed", note: response.error.message };
+  let response = null;
+  if (targetUrl) {
+    response = await page.goto(targetUrl, {
+      waitUntil: "domcontentloaded",
+      timeout: args.timeoutMs,
+    }).catch((error) => ({ error }));
+    if (response?.error) return { status: "failed", note: response.error.message };
+  }
 
-  const direct = await saveIfPdf(response, dest);
-  if (direct.ok) return { status: "downloaded", note: direct.reason };
+  if (response) {
+    const direct = await saveIfPdf(response, dest);
+    if (direct.ok) return { status: "downloaded", note: direct.reason };
+  }
+
+  const searchResult = await openBestSearchResult(page, item, args.timeoutMs).catch((error) => ({
+    opened: false,
+    reason: error.message,
+  }));
+  if (searchResult.opened) {
+    const articleDirect = await saveIfPdf(await page.waitForResponse((r) => /pdf/i.test(r.headers()["content-type"] || ""), { timeout: 2500 }).catch(() => null), dest);
+    if (articleDirect.ok) return { status: "downloaded", note: `${searchResult.reason}; ${articleDirect.reason}` };
+  }
 
   const pdfUrls = await collectPdfUrls(page).catch(() => []);
   for (const pdfUrl of pdfUrls.slice(0, 8)) {
@@ -449,6 +621,7 @@ async function main() {
       const targetUrl =
         item.url ||
         args.searchUrlTemplate?.replace("{query}", encodeURIComponent(item.title)) ||
+        (args.searchProvider ? `${args.searchProvider}: search home page for "${item.title}"` : null) ||
         "(search only)";
       console.log(`${item.id}\t${item.title}\t${targetUrl}\t${destinationFor(item)}`);
     }
@@ -463,7 +636,7 @@ async function main() {
   if (args.login) {
     await page.goto(args.portal, { waitUntil: "domcontentloaded", timeout: args.timeoutMs }).catch(() => null);
     const rl = readline.createInterface({ input, output });
-    await rl.question("Faca login no portal aberto. Quando terminar, pressione Enter aqui...");
+    await rl.question("Faca login no portal aberto. Quando terminar, pressione Enter aqui para continuar...");
     rl.close();
   }
 
@@ -493,6 +666,12 @@ async function main() {
     fs.appendFileSync(logPath, `${JSON.stringify(row)}\n`, "utf8");
     console.log(`  ${result.status}: ${result.note}`);
     await page.waitForTimeout(args.delayMs);
+  }
+
+  if (args.keepOpen) {
+    await waitForExplicitClose(
+      "Navegador mantido aberto. NAO aperte Enter para fechar; digite FECHAR somente quando quiser encerrar: "
+    );
   }
 
   await context.close();
