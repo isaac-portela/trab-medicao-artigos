@@ -1,0 +1,2 @@
+"""ADK article classification pipeline."""
+
