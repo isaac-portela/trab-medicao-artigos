@@ -3,7 +3,6 @@ venv/
 .playwright-mcp/
 __pycache__/
 *.pyc
-*.xlsx
 .idea/
 .vscode/
 .env

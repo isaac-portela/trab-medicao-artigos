@@ -6,7 +6,7 @@ Este documento explica o passo a passo necessário para preparar o ambiente Pyth
 
 ## 📋 Pré-requisitos
 1. **Python 3.10 ou superior** instalado.
-2. **Chave de API do Gemini (API Key)** obtida gratuitamente no [Google AI Studio](https://aistudio.google.com/).
+2. **Chave de API do DeepSeek (API Key)** obtida em [platform.deepseek.com](https://platform.deepseek.com/).
 
 ---
 
@@ -42,20 +42,20 @@ Com o ambiente ativado, instale as bibliotecas Python necessárias declaradas no
 pip install -r requirements.txt
 ```
 
-### 4. Configurar a Chave da API do Gemini
+### 4. Configurar a Chave da API do DeepSeek
 Defina a sua API Key como uma variável de ambiente para que o script possa consumi-la:
 
 * **Windows (PowerShell)**:
   ```powershell
-  $env:GEMINI_API_KEY="SUA_CHAVE_AQUI"
+  $env:DEEPSEEK_API_KEY="SUA_CHAVE_AQUI"
   ```
 * **Windows (cmd)**:
   ```cmd
-  set GEMINI_API_KEY=SUA_CHAVE_AQUI
+  set DEEPSEEK_API_KEY=SUA_CHAVE_AQUI
   ```
 * **Linux / macOS**:
   ```bash
-  export GEMINI_API_KEY="SUA_CHAVE_AQUI"
+  export DEEPSEEK_API_KEY="SUA_CHAVE_AQUI"
   ```
 
 ---
