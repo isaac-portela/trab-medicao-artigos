@@ -45,24 +45,29 @@ class CitationLookupService:
 
         cached = self.cache.get(title)
         if cached is not None:
+            if isinstance(cached, dict):
+                return CitationResult(
+                    count=cached.get("count"),
+                    source=cached.get("source", "cache"),
+                )
             return CitationResult(count=cached, source="cache")
 
         errors: list[str] = []
         crossref = self._query_crossref(title)
         if crossref.count is not None:
-            self.cache.set(title, crossref.count)
+            self.cache.set(title, {"count": crossref.count, "source": "CrossRef"})
             return crossref
         if crossref.error_message:
             errors.append(crossref.error_message)
 
         semantic = self._query_semantic_scholar(title)
         if semantic.count is not None:
-            self.cache.set(title, semantic.count)
+            self.cache.set(title, {"count": semantic.count, "source": "Semantic Scholar"})
             return semantic
         if semantic.error_message:
             errors.append(semantic.error_message)
 
-        self.cache.set(title, None)
+        self.cache.set(title, {"count": None, "source": "N/A"})
         return CitationResult(count=None, source="N/A", error_message="; ".join(errors) or None)
 
     def _request_json(self, api_name: str, url: str, params: dict[str, Any]) -> dict[str, Any] | None:

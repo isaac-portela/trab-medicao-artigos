@@ -9,11 +9,12 @@ OUTPUT_EXCEL = BASE_DIR / "classificacao_artigos.xlsx"
 CACHE_PATH = BASE_DIR / ".citation_cache.json"
 CHECKPOINTS_DIR = BASE_DIR / ".adk_checkpoints"
 
-GEMINI_MODEL = "gemini-2.0-flash"
+DEEPSEEK_MODEL = "deepseek/deepseek-v4-flash"
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 MAX_DEPTH = 3
-MAX_PDF_CHARS = 80_000
-DEFAULT_DELAY = 4.0
+MAX_PDF_CHARS = 1_000_000
+DEFAULT_DELAY = 1.0
 MIN_DELAY = 1.0
 MAX_DELAY = 60.0
 MAX_RETRIES = 3

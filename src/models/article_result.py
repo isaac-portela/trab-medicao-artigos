@@ -30,6 +30,7 @@ class ArticleResult:
     citation_count: int | None
     ifrd: float | None
     error: str | None = None
+    citation_source: str | None = None
 
 
 @dataclass

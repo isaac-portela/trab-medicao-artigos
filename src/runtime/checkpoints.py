@@ -47,6 +47,7 @@ class CheckpointStore:
                 citation_count=outputs.get("citation_count"),
                 ifrd=outputs.get("ifrd"),
                 error=payload.get("error"),
+                citation_source=outputs.get("citation_source"),
             )
         except (KeyError, ValueError, TypeError):
             return None
@@ -79,6 +80,7 @@ class CheckpointStore:
                 "classification": self._dump_model(result.classification),
                 "critic_output": self._dump_model(result.critic_output),
                 "citation_count": result.citation_count,
+                "citation_source": result.citation_source,
                 "ifrd": result.ifrd,
             },
         }

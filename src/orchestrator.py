@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import os
 from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any
@@ -10,7 +11,7 @@ from pydantic import BaseModel
 
 from src.agents import classifier_agent, critic_agent, reader_agent, synthesizer_agent
 from src.agents._factory import get_agent_attr
-from src.config import BASE_RETRY_DELAY, CHECKPOINTS_DIR, DEFAULT_DELAY, MAX_RETRIES
+from src.config import BASE_RETRY_DELAY, CHECKPOINTS_DIR, OPENROUTER_BASE_URL, DEFAULT_DELAY, MAX_RETRIES
 from src.discovery import ArticleMetadata
 from src.ifrd import calculate_ifrd
 from src.models import (
@@ -48,36 +49,44 @@ class ArticleLogContext:
         return f"[article {position}{self.key}] {self.title}"
 
 
-class GeminiStructuredExecutor:
-    def __init__(self, api_key: str | None = None):
-        from google import genai
-        from google.genai import types
+class DeepSeekStructuredExecutor:
+    """Executor that calls the DeepSeek API via the OpenAI-compatible SDK
+    and uses the *instructor* library for Pydantic-validated structured output."""
 
-        self._types = types
-        self.client = genai.Client(api_key=api_key) if api_key else genai.Client()
+    def __init__(self, api_key: str | None = None):
+        import instructor
+        from openai import OpenAI
+
+        resolved_key = api_key or os.environ.get("OPENROUTER_API_KEY", "")
+        raw_client = OpenAI(api_key=resolved_key, base_url=OPENROUTER_BASE_URL)
+        self.client = instructor.from_openai(raw_client)
 
     async def run(self, agent: Any, payload: BaseModel, output_schema: type[BaseModel]) -> BaseModel:
         return await asyncio.to_thread(self._run_sync, agent, payload, output_schema)
 
     def _run_sync(self, agent: Any, payload: BaseModel, output_schema: type[BaseModel]) -> BaseModel:
         instruction = get_agent_attr(agent, "instruction")
+        model_id: str = get_agent_attr(agent, "model")
+        # LiteLLM-style identifiers use a 'provider/' prefix; the DeepSeek
+        # API expects just the model name (e.g. 'deepseek-v4-flash').
+        if "/" in model_id:
+            model_id = model_id.split("/", 1)[1]
+
         prompt = (
             f"{instruction}\n\n"
             "Entrada JSON validada para esta etapa:\n"
             f"{payload.model_dump_json(indent=2)}"
         )
-        response = self.client.models.generate_content(
-            model=get_agent_attr(agent, "model"),
-            contents=prompt,
-            config=self._types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=output_schema,
-                temperature=0.1,
-            ),
+        result = self.client.chat.completions.create(
+            model=model_id,
+            response_model=output_schema,
+            messages=[
+                {"role": "system", "content": "Você é um assistente acadêmico. Responda APENAS em JSON válido seguindo estritamente o schema solicitado."},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.1,
         )
-        if not response.text:
-            raise ValueError("empty Gemini response")
-        return output_schema.model_validate_json(response.text)
+        return result
 
 
 class PipelineOrchestrator:
@@ -86,7 +95,7 @@ class PipelineOrchestrator:
         delay_seconds: float = DEFAULT_DELAY,
         max_retries: int = MAX_RETRIES,
         base_retry_delay: float = BASE_RETRY_DELAY,
-        executor: GeminiStructuredExecutor | None = None,
+        executor: DeepSeekStructuredExecutor | None = None,
         citation_service: CitationLookupService | None = None,
         checkpoint_store: CheckpointStore | None = None,
     ):
@@ -95,22 +104,9 @@ class PipelineOrchestrator:
         self.delay_seconds = delay_seconds
         self.max_retries = max_retries
         self.base_retry_delay = base_retry_delay
-        self.executor = executor or GeminiStructuredExecutor()
+        self.executor = executor or DeepSeekStructuredExecutor()
         self.citation_service = citation_service or CitationLookupService()
         self.checkpoint_store = checkpoint_store or CheckpointStore(CHECKPOINTS_DIR)
-        self.article_sequence = self._build_article_sequence()
-
-    @staticmethod
-    def _build_article_sequence() -> Any | None:
-        try:
-            from google.adk.agents import SequentialAgent
-
-            return SequentialAgent(
-                name="article_classification_sequence",
-                sub_agents=[reader_agent, classifier_agent, critic_agent],
-            )
-        except Exception:
-            return None
 
     @staticmethod
     def _metadata_dto(metadata: ArticleMetadata) -> ArticleMetadataDTO:
@@ -182,10 +178,12 @@ class PipelineOrchestrator:
             )
         except Exception as exc:
             logger.error("%s: Reader failed: %s", context.prefix, exc)
+            citation = self._safe_citation(metadata.title)
             result = self._result(
                 metadata,
                 ProcessingStatus.READER_FAILED,
-                citation_count=self._safe_citation(metadata.title).count,
+                citation_count=citation.count,
+                citation_source=citation.source,
                 error=str(exc),
             )
             self.checkpoint_store.save(result)
@@ -203,11 +201,13 @@ class PipelineOrchestrator:
             )
         except Exception as exc:
             logger.error("%s: Classifier failed: %s", context.prefix, exc)
+            citation = self._safe_citation(metadata.title)
             result = self._result(
                 metadata,
                 ProcessingStatus.CLASSIFIER_FAILED,
                 super_summary=super_summary,
-                citation_count=self._safe_citation(metadata.title).count,
+                citation_count=citation.count,
+                citation_source=citation.source,
                 error=str(exc),
             )
             self.checkpoint_store.save(result)
@@ -229,12 +229,14 @@ class PipelineOrchestrator:
             )
         except Exception as exc:
             logger.error("%s: Critic failed: %s", context.prefix, exc)
+            citation = self._safe_citation(metadata.title)
             result = self._result(
                 metadata,
                 ProcessingStatus.CRITIC_FAILED,
                 super_summary=super_summary,
                 classification=classification,
-                citation_count=self._safe_citation(metadata.title).count,
+                citation_count=citation.count,
+                citation_source=citation.source,
                 error=str(exc),
             )
             self.checkpoint_store.save(result)
@@ -252,6 +254,7 @@ class PipelineOrchestrator:
             classification=classification,
             critic_output=critic_output,
             citation_count=citation.count,
+            citation_source=citation.source,
             ifrd=ifrd,
             error=extraction_error if status == ProcessingStatus.PDF_EXTRACTION_FAILED else citation.error_message,
         )
@@ -276,6 +279,7 @@ class PipelineOrchestrator:
         classification: ClassificationOutput | None = None,
         critic_output: CriticOutput | None = None,
         citation_count: int | None = None,
+        citation_source: str | None = None,
         ifrd: float | None = None,
         error: str | None = None,
     ) -> ArticleResult:
@@ -286,6 +290,7 @@ class PipelineOrchestrator:
             classification=classification,
             critic_output=critic_output,
             citation_count=citation_count,
+            citation_source=citation_source,
             ifrd=ifrd,
             error=error,
         )

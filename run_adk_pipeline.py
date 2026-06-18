@@ -23,7 +23,7 @@ logger = logging.getLogger("run_adk_pipeline")
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Pipeline ADK para classificação de artigos acadêmicos.")
     parser.add_argument("--dry-run", action="store_true", help="Processa apenas o primeiro artigo descoberto.")
-    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay em segundos entre chamadas Gemini.")
+    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay em segundos entre chamadas DeepSeek.")
     parser.add_argument("--resume", action="store_true", help="Reusa checkpoints existentes e processa apenas faltantes.")
     parser.add_argument(
         "--only-missing",
@@ -76,9 +76,9 @@ async def async_main(argv: list[str] | None = None) -> int:
     load_dotenv(Path.cwd() / ".env")
     args = parse_args(argv)
 
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+    api_key = os.environ.get("OPENROUTER_API_KEY", "").strip()
     if not api_key:
-        print("GEMINI_API_KEY is missing or empty.", file=sys.stderr)
+        print("OPENROUTER_API_KEY is missing or empty.", file=sys.stderr)
         return 1
 
     articles = discover_articles(ARTIGOS_DIR)

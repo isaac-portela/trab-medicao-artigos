@@ -22,6 +22,7 @@ MAIN_COLUMNS = [
     "IFRD",
     "Classificação IFRD",
     "Citações",
+    "Origem Citações",
     "Tema",
     "Ano Publicação",
     "Editora/Entidade",
@@ -89,6 +90,21 @@ class ExcelExporter:
         summary = result.super_summary
         ifrd_label = classify_ifrd(result.ifrd)[0] if result.ifrd is not None else ""
 
+        citation_count = result.citation_count
+        citation_source = result.citation_source
+
+        # Resolve citation source/count dynamically if missing or legacy
+        if citation_source is None or citation_source in ("N/A", "cache"):
+            from src.services.citation_lookup import CitationLookupService
+            try:
+                service = CitationLookupService()
+                citation_res = service.get_citation_count(metadata.title)
+                citation_source = citation_res.source
+                if citation_res.count is not None:
+                    citation_count = citation_res.count
+            except Exception:
+                pass
+
         row = {
             "Grupo": metadata.group,
             "Aluno": metadata.student,
@@ -99,7 +115,8 @@ class ExcelExporter:
             "Erro": result.error or "",
             "IFRD": result.ifrd,
             "Classificação IFRD": ifrd_label,
-            "Citações": result.citation_count if result.citation_count is not None else "N/A",
+            "Citações": citation_count if citation_count is not None else "N/A",
+            "Origem Citações": citation_source if citation_source is not None else "N/A",
             "Tema": classification.theme if classification else "",
             "Ano Publicação": classification.publication_year if classification else "",
             "Editora/Entidade": classification.publisher_entity if classification else "",

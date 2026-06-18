@@ -21,26 +21,16 @@ def create_agent(
     instruction: str,
     output_schema: type[Any],
 ) -> Any:
-    try:
-        from google.adk.agents import Agent
-
-        return Agent(
-            model=model,
-            name=name,
-            description=description,
-            instruction=instruction,
-            output_schema=output_schema,
-        )
-    except Exception:
-        return AgentSpec(
-            name=name,
-            model=model,
-            description=description,
-            instruction=instruction,
-            output_schema=output_schema,
-        )
+    return AgentSpec(
+        name=name,
+        model=model,
+        description=description,
+        instruction=instruction,
+        output_schema=output_schema,
+    )
 
 
 def get_agent_attr(agent: Any, attr: str) -> Any:
     return getattr(agent, attr)
+
 
