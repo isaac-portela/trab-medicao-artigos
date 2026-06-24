@@ -1,0 +1,5 @@
+| Natureza Dados | quantidade | ifrd_medio | aprendizagem_media | alinhamento_medio | replicabilidade_media | citacoes_mediana |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mista | 33 | 4.16 | 4.61 | 4.97 | 2.58 | 19.0 |
+| Quantitativa | 30 | 4.28 | 4.7 | 5.0 | 2.93 | 2.5 |
+| Qualitativa | 21 | 3.7 | 3.95 | 4.67 | 2.1 | 6.0 |

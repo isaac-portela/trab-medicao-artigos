@@ -1,0 +1,9 @@
+| Rubrica | mean | median | std | min | max |
+| --- | --- | --- | --- | --- | --- |
+| Qualidade | 4.08 | 4.0 | 0.81 | 2.0 | 5.0 |
+| Replicabilidade | 2.58 | 3.0 | 0.85 | 1.0 | 5.0 |
+| Aplicabilidade | 4.29 | 4.0 | 0.8 | 1.0 | 5.0 |
+| Contrib. Teórica | 3.86 | 4.0 | 0.87 | 2.0 | 5.0 |
+| Adequação | 3.75 | 4.0 | 0.56 | 2.0 | 5.0 |
+| Aprendizagem | 4.48 | 5.0 | 0.65 | 2.0 | 5.0 |
+| Alinhamento | 4.9 | 5.0 | 0.37 | 3.0 | 5.0 |

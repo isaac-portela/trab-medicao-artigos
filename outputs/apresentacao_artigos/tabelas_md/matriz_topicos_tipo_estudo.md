@@ -1,0 +1,12 @@
+| Tópico | Estudo de Caso | Experimento Controlado | Outro | Proposta Conceitual | Revisão Sistemática | Survey |
+| --- | --- | --- | --- | --- | --- | --- |
+| Análise de resultados de experimentos | 17 | 22 | 1 | 10 | 17 | 6 |
+| Apresentação de resultados experimentais | 13 | 19 | 1 | 9 | 14 | 4 |
+| Estratégias de experimentação | 12 | 15 | 1 | 7 | 11 | 4 |
+| Execução de experimento | 12 | 20 | 1 | 10 | 12 | 4 |
+| Identificação, organização e validação de métricas de software | 16 | 10 | 3 | 6 | 14 | 5 |
+| Métricas de processo | 18 | 20 | 1 | 2 | 17 | 5 |
+| Métricas de produto | 13 | 22 | 2 | 3 | 15 | 4 |
+| Métricas de projeto | 16 | 14 | 1 | 2 | 14 | 5 |
+| Planejamento de experimento | 12 | 20 | 1 | 10 | 13 | 4 |
+| Processos e técnicas de medição | 16 | 12 | 2 | 4 | 11 | 6 |
